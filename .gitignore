@@ -7,3 +7,4 @@ envioment.json
 /fes
 package-lock.json
 data/premiumUser.json
+/commands/vmc.js
