@@ -1,0 +1,21 @@
+{
+  "name": "vision_master",
+  "version": "2.0.1",
+  "description": "ushiris's vision bot",
+  "main": "main.js",
+  "dependencies": {
+    "@discordjs/voice": "^0.7.5",
+    "discord.js": "^13.8.1",
+    "ffmpeg-static": "^4.4.0",
+    "node": "^17.2.0",
+    "opusscript": "^0.0.8",
+    "request": "^2.88.2",
+    "tedious": "^14.0.0",
+    "tweetnacl": "^1.0.3",
+    "ytdl-core": "^4.11.0"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "test": "node main.js"
+  }
+}
