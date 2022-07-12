@@ -1,4 +1,9 @@
 node_modules*
 /bgm*
-images*
-/data/*.json
+/images
+/old
+data/network.json
+envioment.json
+/fes
+package-lock.json
+data/premiumUser.json
