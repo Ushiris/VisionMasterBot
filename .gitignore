@@ -1,0 +1,4 @@
+node_modules*
+/bgm*
+images*
+/data/*.json
