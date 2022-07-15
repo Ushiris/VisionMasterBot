@@ -8,3 +8,4 @@ envioment.json
 package-lock.json
 data/premiumUser.json
 /commands/vmc.js
+data/commandLog.json

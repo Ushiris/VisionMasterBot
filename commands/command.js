@@ -1,3 +1,5 @@
+const logSystem = require("../data/interface.js");
+
 exports.runCommand = async function (args, message) {
     var cmdName = args.shift().replace("/", "").replace("!", "");
 
@@ -9,6 +11,7 @@ exports.runCommand = async function (args, message) {
     }
 
     cmd.run(args, message);
+    logSystem.writeLog(message.guild.id, message.guild.name, cmdName);
 }
 
 exports.isCommand = function (str) {
