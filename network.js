@@ -8,10 +8,14 @@ exports.updatePublicIP = function(){
     }
 
     request(options, function (error, response, body) {
-        var newIP = JSON.parse(body).ip;
-        if(JSON.parse(fs.readFileSync("./data/network.json")).ip == newIP) return;
-
-        fs.writeFileSync("./data/network.json", body);
-        console.log("ip updated! new ip is " + newIP);
+        try{
+            var newIP = JSON.parse(body).ip;
+            if(JSON.parse(fs.readFileSync("./data/network.json")).ip == newIP) return;
+    
+            fs.writeFileSync("./data/network.json", body);
+            console.log("ip updated! new ip is " + newIP);
+        }catch{
+            console.log("ip request failed!");
+        }
     });
 }
