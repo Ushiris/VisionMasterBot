@@ -50,11 +50,15 @@ Discord上で動作する、Phantom Magic VISIONのカードテキスト表示BO
 
 1. `envioment.json`を作成し、ファイルの内容を`{"token" : "ここをBOTのトークンに置換"}`にする
 
-1. `data\premiumUser.json`を作成し、ファイルの内容を`{ "guildList" : ["ここをサーバーIDに置換"]}`にする(推奨)
+1. `data\commandLog.json`を作成し、ファイルの内容を`{"log" : []}`にする
+
+1. `data\premiumUser.json`を作成し、ファイルの内容を`{"guildList" : ["ここをサーバーIDに置換"]}`にする(推奨)
 
 1. VScode（もしくはコンソール、PowerShellや"端末"など）でダウンロードしたフォルダを開く
 
 1. コンソールで`npm i`を実行する（少し時間がかかります）
+
+1. コンソールで`npm -g hotnode`を実行する
 
 ---
 
