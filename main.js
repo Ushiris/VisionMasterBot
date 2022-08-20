@@ -1,8 +1,9 @@
 const discord = require("discord.js");
-const client = new discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES", "GUILD_VOICE_STATES"] });
+const { GatewayIntentBits } = require('discord.js');
+const client = new discord.Client({intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.MessageContent]});
 const vm = require("./visionMaster.js");
 
-client.on("ready", message => { client.user.setActivity("Phantom magic VISION", { type: "PLAYING" }); });
+client.on("ready", message => { client.user.setActivity({name : "Phantom magic VISION", type: discord.Activity.Playing })});
 
 client.on("messageCreate", async message => {
   //botによるコマンドループを防ぎます
@@ -14,11 +15,10 @@ client.on("messageCreate", async message => {
   //コマンドの実行
   if (vm.cmd.isCommand(inputs[0])) vm.cmd.runCommand(inputs, message);
 });
-
+ 
 client.login(require("./envioment.json").token);
 
 setInterval(vm.network.updatePublicIP, 5 * 60 * 1000);
-
 
 // 通信の詳細確認用。ログがかなり大量に流れるので基本的にはコメントアウト推奨。
 // client.on("raw", async args =>{ console.log(args); });
