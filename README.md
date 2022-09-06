@@ -6,6 +6,8 @@ Discord上で動作する、Phantom Magic VISIONのカードテキスト表示BO
 
 カードリスト編集を行った皆様へ、この場にて感謝を申し上げます。
 
+また、このBotは[ここ](https://discord.com/api/oauth2/authorize?client_id=678036269133201410&permissions=120279197760&scope=bot)からサーバーへ追加できます。
+
 ---
 
 ## このリポジトリが存在する理由
