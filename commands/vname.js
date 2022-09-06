@@ -36,7 +36,6 @@ exports.options = [
             }
         ]
     }
-
 ];
 
 exports.run = async function (args, message) {
