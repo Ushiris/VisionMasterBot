@@ -1,7 +1,7 @@
 const discord = require("discord.js");
 const { GatewayIntentBits } = require('discord.js');
 const client = new discord.Client({intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.GuildVoiceStates, GatewayIntentBits.MessageContent]});
-const vm = require("./visionMaster.js");
+const vm = require("./visionMaster.js");　
 
 client.on("ready", message => { client.user.setActivity({name : "Phantom magic VISION", type: discord.Activity.Playing })});
 
