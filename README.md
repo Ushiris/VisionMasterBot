@@ -68,7 +68,7 @@ Discord上で動作する、Phantom Magic VISIONのカードテキスト表示BO
 
 1. VScode（もしくはコンソール、PowerShellや"端末"など）でダウンロードしたフォルダを開く
 
-1. コンソールで`npm hotnode main.js`を実行する
+1. コンソールで`hotnode main.js`を実行する
 
 ---
 
