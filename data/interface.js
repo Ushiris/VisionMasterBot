@@ -9,6 +9,8 @@ exports.getPublicIP = function(){
 }
 
 exports.writeLog = function(guildID, guildName, commandName){
+    if(guildName == "hogehoge")return; //自鯖のログは残さない（テスト用にコマンド打ったりしてて単純に邪魔なので）
+
     var log = JSON.parse(fs.readFileSync("./data/commandLog.json"));
     log.log.push({guildID, guildName, commandName});
 
