@@ -56,7 +56,7 @@ exports.run = async function (args, message) {
         options["package"] = package;
     }
 
-    var card = cardIO.searchCardList(options);
+    var card = no ? cardIO.searchCardList(options) : null;
 
     message.reply(card ? cardIO.cardFormat(card, isZip) : "カードが見つかりませんでした");
 }

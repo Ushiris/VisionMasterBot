@@ -36,7 +36,7 @@ exports.run = async function (args, message) {
     var prefix = cardIO.convartPrefix(args[0]) == "E" ? "N" : cardIO.convartPrefix(args.shift());
     var no = args.shift();
 
-    var card = cardIO.getCardData(prefix, no);
+    var card = no ? cardIO.getCardData(prefix, no) : null;
 
     message.reply(card ? cardIO.cardFormat(card, isZip) : "カードが見つかりませんでした");
 }

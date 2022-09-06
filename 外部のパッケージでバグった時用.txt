@@ -1,4 +1,4 @@
-//sig.jsの65行目をこんな感じに変える
+sig.jsの65行目をこんな感じに変える
 const functionBody = `var ${functionStart}${utils.cutAfterJSON(subBody)}catch{};${functionName}(ncode);}`;
 
-//hotnodeのutil.print()について、console.log()に変更する
+hotnodeのutil.print()について、console.log()に変更する
